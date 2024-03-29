@@ -1,0 +1,130 @@
+/* Couleurs principales */
+/*:root {
+    --main-color: #001e4d;
+    --accent-color: #f2f2f2;
+  }*/
+  
+  /* Typographie */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;    
+    background: linear-gradient(45deg, transparent,skyblue,transparent);
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 1em;
+    color: azure;
+   
+  }
+  
+  /* Structure générale */
+  .app {
+    background-color: transparent;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  /* Section introduction */
+  .introduction {
+    background-color: rgb(100, 138, 153);
+    border: 2px solid rgb(29, 6, 134);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .introduction h1 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .introduction p {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .introduction button {
+    background: linear-gradient(45deg, transparent,skyblue,transparent);
+    color:black;
+    font-weight: 500;
+    width: 100px;
+    border: 1px solid ;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .introduction button:hover {
+    background-color: #f2f2f2;
+  }
+  /* Section quiz */
+  .quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, transparent,skyblue,transparent);
+    color: #f2f2f2;
+  }
+  
+  .quiz h2 {
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, transparent,rgb(16, 14, 181),transparent);
+
+  }
+  
+  .quiz ul {
+    padding: 10px;
+    list-style: none;
+    color: #ddd;
+  }
+  
+  .quiz li {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    color: #ddd;  
+    background: linear-gradient(45deg, transparent,skyblue,transparent);
+
+  }
+  
+  .quiz li input {
+    margin-right: 10px;   
+  }
+  
+  .quiz li label {
+    cursor: pointer;
+  }
+  
+  .quiz li label::after {
+    content: "";
+    position: absolute
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-image: url('quizz.jpg');
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <section class="introduction">
+      <h1>Bienvenue au Quiz JavaScript !</h1>
+      <p>Testez vos connaissances sur le HTML, CSS et JavaScript.</p>
+      <button id="start-button">Commencer</button>
+    </section>
+    <section class="quiz" id="quiz" style="display:none;">
+      <!-- Le quiz apparaîtra ici -->
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Assurez-vous que cette logique soit présente dans votre script.js
+    document.getElementById('start-button').addEventListener('click', startQuiz);
+
+    function startQuiz() {
+      // Masquer la section d'introduction et afficher le quiz
+      document.querySelector('.introduction').style.display = 'none';
+      document.getElementById('quiz').style.display = 'block';
+      // Initialisation du quiz
+      displayQuiz();
+    }
+
+    // Le reste de vos fonctions JavaScript ici, comme displayQuiz et submitQuiz
+  </script>
+</body>
+</html>
